@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Galería Virtual</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="navbar navbar-light shadow-sm">
+        <div class="container">
+            <a href="#" style="display: none"/>
+            <a href="index.html" class="navbar-brand d-flex align-items-center">
+                <img src="images/paredfinal/JpgParedFinal/LogoEscudo.jpg" width="50" height="50" style="margin-right: 10px">
+                <strong>Consulado General De la República Dominicana - Galería Virtual</strong>
+            </a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row py-lg-5">
+            <h1 class="fw-light text-center">
+                Carmen Miranda Levy
+            </h1>
+            <div>
+                <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+                   <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="obras-tab" data-bs-toggle="tab" data-bs-target="#obras" type="button" role="tab" aria-controls="obras" aria-selected="true">Obras</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="bio-tab" data-bs-toggle="tab" data-bs-target="#biografia" type="button" role="tab" aria-controls="bio" aria-selected="false">Biografía</button>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade" id="biografia" role="tabpanel" aria-labelledby="bio-tab">
+                    <main>
+                        <section class="py-5 container">
+                            <div class="row py-lg-5">
+                                <div class="col-lg-12 col-md-12 mx-auto">
+                                    <code class="lead text-muted">
+                                        <p>Licenciada en Artes Pl&#225;sticas y en Proyectos Culturales, La Sorbonne, Par&#237;s, Francia y egresada de la primera promoci&#243;n de la escuela de dise&#241;o de Altos de Chav&#243;n. Naci&#243; en Santo Domingo, Rep. Dom.  Ha participado en colectivas en Par&#237;s, Honduras, Brasil, Suiza y en la primera bienal de arte contempor&#225;neo de Florencia, Italia.</p>
+<p>Representante de nuestro pa&#237;s en el servicio exterior dominicano por m&#225;s de 20 a&#241;os y en la actualidad se desempe&#241;a como Ministro Consejero de la Rep&#250;blica Dominicana en Suiza.</p>
+<p></p>
+
+                                    </code>
+                                </div>
+                            </div>
+                        </section>
+                    </main>
+                </div>
+                <div class="tab-pane fade show active" id="obras" role="tabpanel" aria-labelledby="obras-tab">
+                    <main>
+                        <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                             aria-hidden="true">
+                            <div class="modal-dialog modal-xl" data-dismiss="modal">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <img src="" class="imagepreview" style="width: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="album py-5 bg-light">
+                            <div class="container">
+                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                                                    <div class="col">
+                    <div class="card shadow-sm">
+                        <a href="#" class="pop">
+                            <img src="images/carmen/Eclosión-ando sol-edades.JPG" class="img-thumbnail z-depth-1"
+                                 data-toggle="modal" data-target="#modal1"/>
+                        </a>
+                        <div class="card-body">
+                            <p class="card-text">
+                                eclosión-ando sol-edades
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <a href="#" class="pop">
+                            <img src="images/carmen/Pensa-miento femenino.JPG" class="img-thumbnail z-depth-1"
+                                 data-toggle="modal" data-target="#modal1"/>
+                        </a>
+                        <div class="card-body">
+                            <p class="card-text">
+                                pensa-miento femenino
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <a href="#" class="pop">
+                            <img src="images/carmen/Senti-miento.jpg" class="img-thumbnail z-depth-1"
+                                 data-toggle="modal" data-target="#modal1"/>
+                        </a>
+                        <div class="card-body">
+                            <p class="card-text">
+                                senti-miento
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<footer class="text-muted py-5">
+    <div class="container">
+        <p class="float-end mb-1">
+            <a href="#">Volver Arriba</a>
+        </p>
+    </div>
+</footer>
+
+
+<script src="js/bootstrap.bundle.min.js"></script>s
+<script type="application/javascript">
+    $(function () {
+        $('.pop').on('click', function () {
+            $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+            $('#imagemodal').modal('show');
+        });
+    });
+</script>
+
+</body>
+</html>
